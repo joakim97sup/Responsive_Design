@@ -1,0 +1,112 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+body {
+    background: #212121;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    color: #FFF;
+}
+h1 {
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Bree Serif', 'serif';
+}
+/* Giving a background-color to the nav container. */
+nav {
+    width: 100%;
+    float: left;
+    background-color: #AA898A;
+}
+/* Removing padding, margin and "list-style" from the "ul", */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: #AA898A;
+}
+/* Styling the links */
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+    line-height: 60px;
+    text-decoration: none;
+}
+/* Background color change on Hover */
+nav a:hover {
+    background-color: #212121;
+}
+/* The dropdown menu styles*/
+/* Hide Dropdowns by default and assigning position absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 60px;
+}
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+/* First Dropdown */
+nav ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+    top: 250px;  /* creates problems with responsive dropdown */
+}
+footer {
+    clear: both;
+    padding: 20px 0;
+}
+
+@media screen and (max-width : 768px) {
+h1 {
+    font-size: smaller;
+    text-align: center;
+    margin-top: 10px;
+}
+nav ul li {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+/* Dropdown items */
+nav a {
+
+}
+nav ul ul {
+    float: none;
+	/*position: static;*/
+    position: relative;
+	top: -250px;
+    color: #ffffff;
+}
+	
+nav ul ul li:hover > ul {
+		display: none;
+	}
+nav ul ul li {
+    width: 100%;
+    display: block;
+}
+footer {
+    padding: 20px;
+    font-size: smaller;
+    text-align: center;
+}
+}
