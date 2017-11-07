@@ -1,6 +1,5 @@
-/* CSS Document */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@charset "utf-8";
+
 body {
     background: #212121;
     font-size: 22px;
@@ -73,7 +72,12 @@ footer {
     clear: both;
     padding: 20px 0;
 }
-
+.myStyle{
+	display: block;
+}
+button{
+	display: none;
+}
 @media screen and (max-width : 768px) {
 h1 {
     font-size: smaller;
@@ -109,4 +113,18 @@ footer {
     font-size: smaller;
     text-align: center;
 }
+button{
+	display: block;		
 }
+nav{
+display: none;			
+}
+}
+	
+	
+	
+	
+	
+	
+	
+	
